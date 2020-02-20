@@ -22,7 +22,7 @@ socket.on('LIST_ONLINE', arrInfo =>
 socket.on('SIGN_UP_FAIL',()=> alert(' Vui lòng chọn tên người dùng khác !'));
 function openStrem()
 {
-    const config = {audio : false,video : true};
+    const config = {audio : true,video : true};
     return navigator.mediaDevices.getUserMedia(config);
 }
 function playStream(idVideoTag,stream)
