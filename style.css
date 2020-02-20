@@ -87,3 +87,61 @@ p{
   padding: 5px 0;
   font-size: 10px;
 }
+@media only screen and (max-width: 480px){
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+          'header'
+          'header1'
+          'main'
+          'footer';
+        grid-gap: 5px;
+        padding: 5px;
+      }
+    .header { grid-area: header;
+    float: left; }
+    .listOnline { grid-area: header1; float: left; }
+    .video { grid-area: main; 
+     }
+    .myVideo { grid-area: footer; }
+    #remoteStream
+{
+    width: 20rem !important;
+    height: auto;
+}
+#localStream
+{
+    width: 5rem !important;
+    height: auto;
+}
+#signUp
+{
+   text-align: center;
+   padding: 20vh;
+}
+#signUp #yourName
+{
+    font-size: 1rem;
+    padding: 1.5rem 2rem;
+    color: inherit;
+    border: none;
+    border-radius: .2rem;
+    border-bottom: 3px solid #000;
+    /* display: inline-block; */
+    width: 10rem;
+    height: auto;
+}
+#signUp #btnSignUp
+{
+    background-color: #5a73fc; 
+    border: none;
+    color: white;
+    padding: 10px 40px;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 10rem;
+}
+  }
