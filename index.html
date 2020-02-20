@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Call video</title>
+        <script src="jquery.js"></script>
+        <script src="peer.js"></script>
+        <script src="socket.io.js"></script>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <div id="chat">
+        <div class="grid-container">
+            <div class="header">
+                <h3 id="myId">Tên Của Bạn: </h3>
+            </div>
+            <div class="listOnline">
+                <p>Người dùng Online: </p>
+                <ul id="userOnline">
+    
+                </ul>
+            </div>
+            <div class="video">
+                <video id="remoteStream" controls class="videoPlay"></video>
+                 <br /><br />
+            </div>  
+            <div class="myVideo">
+                <video id="localStream" controls class="videoPlay"></video>
+                <br /><br />
+            </div>
+          </div>
+       
+    </div>
+    <div id="signUp">
+        <input type="text" id="yourName" placeholder="Nhập tên của bạn"></br>
+        <button id="btnSignUp">Đăng kí</button>
+    </div>
+    </body>
+    <script src="main.js"></script>
+</html>
