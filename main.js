@@ -1,4 +1,4 @@
-const socket = io('http://localhost:3000');
+const socket = io('https://chatvideo2802.herokuapp.com/');
 $('#chat').hide();
 socket.on('LIST_ONLINE', arrInfo =>
 {
